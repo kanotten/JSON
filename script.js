@@ -75,10 +75,10 @@ const bookListDiv = document.getElementById("book-list");
 
 let bookData = [];
 // fetch the book data.
-fetch("http://localhost:3000/books")
+
   .then((response) => {
-    return response.json();
-  })
+  return response.json();
+})
   .then((bookResultData) => {
     bookData = bookResultData;
 

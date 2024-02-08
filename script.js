@@ -24,3 +24,16 @@ if (4 > 9) {
 }
 
 console.log(name);
+
+
+// modules
+
+let duck = {
+  id: 1,
+  name: "tim",
+  habitat: "swamp",
+  height: 25,
+  diet: "green stuff"
+}
+
+let { name: duckName,habitat: duckHabitat, height: duckHeight } = duck;

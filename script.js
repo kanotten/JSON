@@ -25,7 +25,6 @@ if (4 > 9) {
 
 console.log(name);
 
-
 // modules
 
 let duck = {
@@ -33,7 +32,27 @@ let duck = {
   name: "tim",
   habitat: "swamp",
   height: 25,
-  diet: "green stuff"
+  diet: "green stuff",
+};
+
+//destructuring assignment to extract specific porperties from the duck object
+let { name: duckName, habitat: duckHabitat, height: duckHeight } = duck;
+
+//log info about the duck to the console
+console.log;
+
+//Rest and spread operators
+
+function sum(num1, num2) {
+  return num1 + num2;
 }
 
-let { name: duckName,habitat: duckHabitat, height: duckHeight } = duck;
+console.log(sum(1, 6));
+
+function sum(...numbers) {
+  let total = 0;
+  for (const iterator of numbers) {
+    total += number;
+  }
+  return total;
+}
